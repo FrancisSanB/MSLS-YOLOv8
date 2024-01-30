@@ -4,6 +4,7 @@ train: train
 val: val
 test: test
 
+nc: 1
 names:
     0: lesion
     
