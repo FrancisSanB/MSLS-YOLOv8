@@ -1,0 +1,24 @@
+schema_version: 2023.09.01
+type: workspace
+spec:
+  name: MSLS-UNet
+  description: ''
+  image: community/saturncloud/saturn-python-tensorflow:2022.06.01
+  instance_type: g4dnxlarge
+  environment_variables: {}
+  working_directory: /home/jovyan/workspace
+  extra_packages:
+    pip:
+      install: opencv-python
+    apt:
+      install: htop zip unzip python3-opencv
+  start_script: ''
+  git_repositories: []
+  secrets: []
+  shared_folders: []
+  ide: jupyter
+  disk_space: 2Gi
+  auto_shutoff: 1 hour
+  start_ssh: false
+  use_spot_instance: false
+  expose_app_port: false
